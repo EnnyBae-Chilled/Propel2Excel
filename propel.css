@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    text-decoration: none;
+    /* border: none; */
+    /* outline: none; */
+    scroll-behavior: smooth;
+    /* font-family: "Nunito Sans", sans-serif; */
+    font-family: "Source Sans Pro", sans-serif;
+}
+::after, ::before{
+    box-sizing: border-box;
+}
+:root {
+    --text-color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff;
+    color: black;
+    display: block;
+}
+
+section {
+    /* height: fit-content; */
+    /* padding: 10rem 0% 2rem; */ 
+    padding-top: 10vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.header {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    margin-top: 10px;
+    background: transparent;
+
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: bold; 
+  }
+/* div{
+    display: block;
+    unicode-bidi: isolate;
+} */
+.navbar a{
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 4rem;
+    font-weight: 700;
+    
+}
+
+.navbar a:hover, .navbar a.active{
+    color: #182c63e6;
+}
+
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    margin: 8px;
+}
+.heading{
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.banner-container{
+background: #f1f7ff url('C:/Users/eniol/Propel2Excel/propel-new-home.jpg') no-repeat top;
+height: 50rem;
+padding: 170px 0;
+margin-top: -10px;
+background-position: center;
+background-size: cover;
+position: relative;  
+/* pointer-events: none; */
+}
+
+.banner-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,1)); /* Adjust colors for fade effect */
+    /* pointer-events: none; */
+  }
+
+.banner-text{
+    font-weight: bold;
+    color: #182c63e6;
+    /* text-decoration: none; */
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    margin-top: -10rem;
+}
+
+.banner-text h1{
+    font-size: 10rem;
+}
+.banner-text p{
+    font-size: 3rem;
+}
+
+a.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #182c63e6;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #f1f7ff;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+a.btn:hover {
+    box-shadow: 0 0 1rem black;
+}
+
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    gap: 2.5rem;
+}
+
+.testimonials{
+    padding: 0;
+    gap: 2.5rem;
+}
+
+ul.quote{
+    margin-top: -17rem;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+    z-index: 2;
+    transform: translateX(40%);
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+
+ul.quote li {
+    background: #0454d8;
+    padding: 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: 0 0 10px 0 #0000003b;
+    min-height: 200px;
+    color: #fff;
+    display: grid;
+    width: 400px;
+    gap: 2.5rem;
+    /* text-align: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin: 0 auto;
+
+    align-items: center; */
+
+}
+
+ul.quote li:before {
+    content: "";
+    background: #f1f9ff url("C:/Users/eniol/Propel2Excel/quote-left.webp") no-repeat;
+    padding: 18px;
+    position: absolute;
+    background-size: 60%;
+    border-radius: 60px;
+    margin-top: -51px;
+    background-position: center;
+}
+
+.by{
+    font-style: italic;
+}
+
+li{
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+.about-text .number{
+    text-align: right;
+    align-items: end;
+    margin-top: 2rem;
+    font-size: 2rem;
+    display: inline flex;
+}
+.row2{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.row-title{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.row2 p{
+    font-size: 1.8rem;
+}
+.placement{
+    transform: translateX(35%);
+    text-align: center;
+}
+.placement img{
+    margin-bottom: 10px;
+}
+
+.about-text{
+    max-width: 48rem;
+    /* background: #182c63e6;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: 0 0 10px 0 #0000003b;
+    min-height: 200px;
+    color: #fff;  */
+}
+
+/* .companies{
+    /* display: flex; 
+    margin-top: 0;
+    background: #182c63e6;
+    padding: 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: 0 0 10px 0 #0000003b;
+    min-height: 200px;
+    color: #fff;
+    display: grid;
+    width: 80rem;
+    gap: 2.5rem;
+    justify-content: center;
+    transform: translateX(40%);
+} */
+.companies {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(25%);
+    margin-top: 8rem;
+}
+
+.companies p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #182c63e6;
+}
+.coaches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+    margin: 20px 0;
+}
+
+.coaches img {
+    max-width: 100px;
+    max-height: 50px;
+    object-fit: contain;
+}
+.heading{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+.and-more {
+    font-size: 1em;
+    color: #555;
+    margin-top: 4rem;
+}
+
+#fellows{
+    background-color: #e6f0f6e6;
+    margin: 0;
+}
+
+.fellows h1{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-line: underline;
+}
+.video-container{
+    margin-top: 30rem;
+}
+.videos{
+    margin: 2rem;
+}
+
+
+.enrollment-section {
+    text-align: center;
+    padding: 50px;
+    color: #333;
+}
+
+.enrollment-section h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.enrollment-section p {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step {
+    margin: 0 20px;
+    max-width: 200px;
+    text-align: center;
+}
+
+
+.step h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.step p {
+    font-size: 1.3rem;
+}
+
+.arrow {
+    font-size: 5rem;
+    color: #007bff;
+    margin: 0 10px;
+}
+
+.contact-info {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* .coaches li{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 0 auto; */
+    /* flex-direction: row; */
+    /* text-align: center; 
+}
+/* #182c63e6 */

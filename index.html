@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Auth App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- <div class="welcome">
+    <h1>Welcome to Propel2Excel</h1>
+    <p>Please Create an account or Login</p>
+  </div> -->
+  <div class="container">
+    <h1>Welcome to Propel2Excel</h1>
+    <p>Please Create an account or Login</p>
+    <div class="form-container">
+      <form id="register-form">
+        <h2>Sign Up</h2>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Sign up</button>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </form>
+      <form id="send-verification-email-form" style="display: none;">
+        <h2>Send Verification Email</h2>
+        <input type="email" id="verification-email" placeholder="Email" required>
+        <button type="submit">Send Verification Email</button>
+      </form>
+      <!-- <form id="send-verification-email-form">
+        <h2>Send Verification Email</h2>
+        <input type="email" id="verification-email" placeholder="Email" required>
+        <button type="submit">Send Verification Email</button>
+      </form>
+      <form id="send-reset-password-email-form">
+        <h2>Send Password Reset Email</h2>
+        <input type="email" id="reset-password-email" placeholder="Email" required>
+        <button type="submit">Send Reset Password Email</button>
+      </form>
+      <form id="reset-password-form">
+        <h2>Reset Password</h2>
+        <input type="password" id="new-password" placeholder="New Password" required>
+        <input type="hidden" id="reset-token" value="">
+        <button type="submit">Reset Password</button>
+      </form> -->
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
